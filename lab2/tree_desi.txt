@@ -1,0 +1,263 @@
+Version: 2
+
+Alternatives: &alternatives
+ Ravason LKK90:
+  poj_chlodziarki: 180L
+  poj_zamrazarki: 95L
+  Decybele: 45
+  price: 999 zl
+ LG GSL761:
+  poj_chlodziarki: 180L
+  poj_zamrazarki: 100L
+  Decybele: 61 
+  price: 1199 zl
+ Bosch KGN39KLEC:
+  poj_chlodziarki: 180L
+  poj_zamrazarki: 95L
+  Decybele: 39 
+  price: 759 zl
+ Samsung RB29FERNCSS:
+  poj_chlodziarki: 185L
+  poj_zamrazarki: 100L
+  Decybele: 40
+   16 
+  price: 1199 zl
+ Amica FD2325.4XI:
+  poj_chlodziarki: 200L
+  poj_zamrazarki: 100L
+  Decybele: 38
+   12 
+  price: 1999 zl
+ Amica FD2325.4XI+:
+  poj_chlodziarki: 250L
+  poj_zamrazarki: 100L
+  Decybele: 41 
+  price: 2399 zl
+ MPM C-KB:
+  poj_chlodziarki: 150L
+  poj_zamrazarki: 80L
+  Decybele: 42
+  price: 1799 zl
+ Candy CFMS:
+  poj_chlodziarki: 185L
+  poj_zamrazarki: 100L
+  Decybele: 45
+  price: 3899 zl
+ Hotpoint-Ariston E4DG AAA X O3:
+  poj_chlodziarki: 200L
+  poj_zamrazarki: 100L
+  Decybele: 6100L
+  price: 2599 zl
+ Hotpoint-Ariston E4DG AAA X O3+:
+  poj_chlodziarki: 150L
+  poj_zamrazarki: 90L
+  Decybele: 50
+  price: 2899 zl
+Goal:
+ name: Buy Fridge
+ author: Paluch Anna
+ preferences:
+  pairwise:
+  - [efficiency, quality, 1]
+  - [efficiency, style, 5]
+  - [efficiency,   price, 6]
+  - [quality, style, 5]
+  - [quality,   price, 6]
+  - [style,   price, 3]
+ children:
+  efficiency:
+   preferences:
+    pairwise:
+     - [ Ravason LKK90,  LG GSL761, 1/7]
+     - [ Ravason LKK90,  Bosch KGN39KLEC, 6]
+     - [ Ravason LKK90,  Samsung RB29FERNCSS, 1/4]
+     - [ Ravason LKK90,  Amica FD2325.4XI, 1/5]
+     - [ Ravason LKK90,  Amica FD2325.4XI+, 1/5]
+     - [ Ravason LKK90,  MPM C-KB, 1/9]
+     - [ Ravason LKK90,  Candy CFMS, 1/9]
+     - [ Ravason LKK90,  Hotpoint-Ariston E4DG AAA X O3, 1/6]
+     - [ Ravason LKK90,  Hotpoint-Ariston E4DG AAA X O3+, 1/7]
+     - [ LG GSL761,  Bosch KGN39KLEC, 7]
+     - [ LG GSL761,  Samsung RB29FERNCSS, 6]
+     - [ LG GSL761,  Amica FD2325.4XI, 4]
+     - [ LG GSL761,  Amica FD2325.4XI+, 4]
+     - [ LG GSL761,  MPM C-KB, 1/7]
+     - [ LG GSL761,  Candy CFMS, 1/5]
+     - [ LG GSL761,  Hotpoint-Ariston E4DG AAA X O3, 2]
+     - [ LG GSL761,  Hotpoint-Ariston E4DG AAA X O3+, 1/3]
+     - [ Bosch KGN39KLEC,  Samsung RB29FERNCSS, 1/5]
+     - [ Bosch KGN39KLEC,  Amica FD2325.4XI, 1/8]
+     - [ Bosch KGN39KLEC,  Amica FD2325.4XI+, 1/8]
+     - [ Bosch KGN39KLEC,  MPM C-KB, 1/9]
+     - [ Bosch KGN39KLEC,  Candy CFMS, 1/9]
+     - [ Bosch KGN39KLEC,  Hotpoint-Ariston E4DG AAA X O3, 1/5]
+     - [ Bosch KGN39KLEC,  Hotpoint-Ariston E4DG AAA X O3+, 1/6]
+     - [ Samsung RB29FERNCSS,  Amica FD2325.4XI, 1/3]
+     - [ Samsung RB29FERNCSS,  Amica FD2325.4XI+, 1/3]
+     - [ Samsung RB29FERNCSS,  MPM C-KB, 1/9]
+     - [ Samsung RB29FERNCSS,  Candy CFMS, 1/8]
+     - [ Samsung RB29FERNCSS,  Hotpoint-Ariston E4DG AAA X O3, 1/3]
+     - [ Samsung RB29FERNCSS,  Hotpoint-Ariston E4DG AAA X O3+, 1/4]
+     - [ Amica FD2325.4XI,  Amica FD2325.4XI+, 1]
+     - [ Amica FD2325.4XI,  MPM C-KB, 1/6]
+     - [ Amica FD2325.4XI,  Candy CFMS, 1/5]
+     - [ Amica FD2325.4XI,  Hotpoint-Ariston E4DG AAA X O3, 1]
+     - [ Amica FD2325.4XI,  Hotpoint-Ariston E4DG AAA X O3+, 1/3]
+     - [ Amica FD2325.4XI+,  MPM C-KB, 1/5]
+     - [ Amica FD2325.4XI+,  Candy CFMS, 1/4]
+     - [ Amica FD2325.4XI+,  Hotpoint-Ariston E4DG AAA X O3, 1]
+     - [ Amica FD2325.4XI+,  Hotpoint-Ariston E4DG AAA X O3+, 1/3]
+     - [ MPM C-KB,  Candy CFMS, 3]
+     - [ MPM C-KB,  Hotpoint-Ariston E4DG AAA X O3, 6]
+     - [ MPM C-KB,  Hotpoint-Ariston E4DG AAA X O3+, 4]
+     - [ Candy CFMS,  Hotpoint-Ariston E4DG AAA X O3, 4]
+     - [ Candy CFMS,  Hotpoint-Ariston E4DG AAA X O3+, 3]
+     - [ Hotpoint-Ariston E4DG AAA X O3,  Hotpoint-Ariston E4DG AAA X O3+, 1/2]
+   children: *alternatives
+  quality:
+   preferences:
+    pairwise:
+     - [ Ravason LKK90,  LG GSL761, 1/8]
+     - [ Ravason LKK90,  Bosch KGN39KLEC, 3]
+     - [ Ravason LKK90,  Samsung RB29FERNCSS, 1]
+     - [ Ravason LKK90,  Amica FD2325.4XI, 4]
+     - [ Ravason LKK90,  Amica FD2325.4XI+, 4]
+     - [ Ravason LKK90,  MPM C-KB, 1/8]
+     - [ Ravason LKK90,  Candy CFMS, 1]
+     - [ Ravason LKK90,  Hotpoint-Ariston E4DG AAA X O3, 1]
+     - [ Ravason LKK90,  Hotpoint-Ariston E4DG AAA X O3+, 1]
+     - [ LG GSL761,  Bosch KGN39KLEC, 8]
+     - [ LG GSL761,  Samsung RB29FERNCSS, 7]
+     - [ LG GSL761,  Amica FD2325.4XI, 9]
+     - [ LG GSL761,  Amica FD2325.4XI+, 9]
+     - [ LG GSL761,  MPM C-KB, 1]
+     - [ LG GSL761,  Candy CFMS, 9]
+     - [ LG GSL761,  Hotpoint-Ariston E4DG AAA X O3, 9]
+     - [ LG GSL761,  Hotpoint-Ariston E4DG AAA X O3+, 9]
+     - [ Bosch KGN39KLEC,  Samsung RB29FERNCSS, 1/3]
+     - [ Bosch KGN39KLEC,  Amica FD2325.4XI, 2]
+     - [ Bosch KGN39KLEC,  Amica FD2325.4XI+, 2]
+     - [ Bosch KGN39KLEC,  MPM C-KB, 1/9]
+     - [ Bosch KGN39KLEC,  Candy CFMS, 2]
+     - [ Bosch KGN39KLEC,  Hotpoint-Ariston E4DG AAA X O3, 2]
+     - [ Bosch KGN39KLEC,  Hotpoint-Ariston E4DG AAA X O3+, 2]
+     - [ Samsung RB29FERNCSS,  Amica FD2325.4XI, 4]
+     - [ Samsung RB29FERNCSS,  Amica FD2325.4XI+, 4]
+     - [ Samsung RB29FERNCSS,  MPM C-KB, 1/7]
+     - [ Samsung RB29FERNCSS,  Candy CFMS, 4]
+     - [ Samsung RB29FERNCSS,  Hotpoint-Ariston E4DG AAA X O3, 4]
+     - [ Samsung RB29FERNCSS,  Hotpoint-Ariston E4DG AAA X O3+, 4]
+     - [ Amica FD2325.4XI,  Amica FD2325.4XI+, 1]
+     - [ Amica FD2325.4XI,  MPM C-KB, 1/9]
+     - [ Amica FD2325.4XI,  Candy CFMS, 11]
+     - [ Amica FD2325.4XI,  Hotpoint-Ariston E4DG AAA X O3, 1]
+     - [ Amica FD2325.4XI,  Hotpoint-Ariston E4DG AAA X O3+, 1]
+     - [ Amica FD2325.4XI+,  MPM C-KB, 1/9]
+     - [ Amica FD2325.4XI+,  Candy CFMS, 1]
+     - [ Amica FD2325.4XI+,  Hotpoint-Ariston E4DG AAA X O3, 1]
+     - [ Amica FD2325.4XI+,  Hotpoint-Ariston E4DG AAA X O3+, 1]
+     - [ MPM C-KB,  Candy CFMS, 9]
+     - [ MPM C-KB,  Hotpoint-Ariston E4DG AAA X O3, 9]
+     - [ MPM C-KB,  Hotpoint-Ariston E4DG AAA X O3+, 9]
+     - [ Candy CFMS,  Hotpoint-Ariston E4DG AAA X O3, 1]
+     - [ Candy CFMS,  Hotpoint-Ariston E4DG AAA X O3+, 1]
+     - [ Hotpoint-Ariston E4DG AAA X O3,  Hotpoint-Ariston E4DG AAA X O3+, 1]
+   children: *alternatives
+  style:
+   preferences:
+    pairwise:
+     - [ Ravason LKK90,  LG GSL761, 1/7]
+     - [ Ravason LKK90,  Bosch KGN39KLEC, 6]
+     - [ Ravason LKK90,  Samsung RB29FERNCSS, 1/4]
+     - [ Ravason LKK90,  Amica FD2325.4XI, 1/5]
+     - [ Ravason LKK90,  Amica FD2325.4XI+, 1/5]
+     - [ Ravason LKK90,  MPM C-KB, 1/9]
+     - [ Ravason LKK90,  Candy CFMS, 1/9]
+     - [ Ravason LKK90,  Hotpoint-Ariston E4DG AAA X O3, 1/6]
+     - [ Ravason LKK90,  Hotpoint-Ariston E4DG AAA X O3+, 1/7]
+     - [ LG GSL761,  Bosch KGN39KLEC, 7]
+     - [ LG GSL761,  Samsung RB29FERNCSS, 6]
+     - [ LG GSL761,  Amica FD2325.4XI, 4]
+     - [ LG GSL761,  Amica FD2325.4XI+, 4]
+     - [ LG GSL761,  MPM C-KB, 1/7]
+     - [ LG GSL761,  Candy CFMS, 1/5]
+     - [ LG GSL761,  Hotpoint-Ariston E4DG AAA X O3, 2]
+     - [ LG GSL761,  Hotpoint-Ariston E4DG AAA X O3+, 1/3]
+     - [ Bosch KGN39KLEC,  Samsung RB29FERNCSS, 1/5]
+     - [ Bosch KGN39KLEC,  Amica FD2325.4XI, 1/8]
+     - [ Bosch KGN39KLEC,  Amica FD2325.4XI+, 1/8]
+     - [ Bosch KGN39KLEC,  MPM C-KB, 1/9]
+     - [ Bosch KGN39KLEC,  Candy CFMS, 1/9]
+     - [ Bosch KGN39KLEC,  Hotpoint-Ariston E4DG AAA X O3, 1/5]
+     - [ Bosch KGN39KLEC,  Hotpoint-Ariston E4DG AAA X O3+, 1/6]
+     - [ Samsung RB29FERNCSS,  Amica FD2325.4XI, 1/3]
+     - [ Samsung RB29FERNCSS,  Amica FD2325.4XI+, 1/3]
+     - [ Samsung RB29FERNCSS,  MPM C-KB, 1/9]
+     - [ Samsung RB29FERNCSS,  Candy CFMS, 1/8]
+     - [ Samsung RB29FERNCSS,  Hotpoint-Ariston E4DG AAA X O3, 1/3]
+     - [ Samsung RB29FERNCSS,  Hotpoint-Ariston E4DG AAA X O3+, 1/4]
+     - [ Amica FD2325.4XI,  Amica FD2325.4XI+, 1]
+     - [ Amica FD2325.4XI,  MPM C-KB, 1/6]
+     - [ Amica FD2325.4XI,  Candy CFMS, 1/5]
+     - [ Amica FD2325.4XI,  Hotpoint-Ariston E4DG AAA X O3, 1]
+     - [ Amica FD2325.4XI,  Hotpoint-Ariston E4DG AAA X O3+, 1/3]
+     - [ Amica FD2325.4XI+,  MPM C-KB, 1/5]
+     - [ Amica FD2325.4XI+,  Candy CFMS, 1/4]
+     - [ Amica FD2325.4XI+,  Hotpoint-Ariston E4DG AAA X O3, 1]
+     - [ Amica FD2325.4XI+,  Hotpoint-Ariston E4DG AAA X O3+, 1/3]
+     - [ MPM C-KB,  Candy CFMS, 3]
+     - [ MPM C-KB,  Hotpoint-Ariston E4DG AAA X O3, 6]
+     - [ MPM C-KB,  Hotpoint-Ariston E4DG AAA X O3+, 4]
+     - [ Candy CFMS,  Hotpoint-Ariston E4DG AAA X O3, 4]
+     - [ Candy CFMS,  Hotpoint-Ariston E4DG AAA X O3+, 3]
+     - [ Hotpoint-Ariston E4DG AAA X O3,  Hotpoint-Ariston E4DG AAA X O3+, 1/2]
+   children: *alternatives
+  price:
+   preferences:
+    pairwise:
+     - [ Ravason LKK90,  LG GSL761, 3]
+     - [ Ravason LKK90,  Bosch KGN39KLEC, 1/3]
+     - [ Ravason LKK90,  Samsung RB29FERNCSS, 3]
+     - [ Ravason LKK90,  Amica FD2325.4XI, 3]
+     - [ Ravason LKK90,  Amica FD2325.4XI+, 7]
+     - [ Ravason LKK90,  MPM C-KB, 5]
+     - [ Ravason LKK90,  Candy CFMS, 9]
+     - [ Ravason LKK90,  Hotpoint-Ariston E4DG AAA X O3, 8]
+     - [ Ravason LKK90,  Hotpoint-Ariston E4DG AAA X O3+, 8]
+     - [ LG GSL761,  Bosch KGN39KLEC, 1/5]
+     - [ LG GSL761,  Samsung RB29FERNCSS, 1]
+     - [ LG GSL761,  Amica FD2325.4XI, 5]
+     - [ LG GSL761,  Amica FD2325.4XI+, 6]
+     - [ LG GSL761,  MPM C-KB, 4]
+     - [ LG GSL761,  Candy CFMS, 9]
+     - [ LG GSL761,  Hotpoint-Ariston E4DG AAA X O3, 7]
+     - [ LG GSL761,  Hotpoint-Ariston E4DG AAA X O3+, 7]
+     - [ Bosch KGN39KLEC,  Samsung RB29FERNCSS, 4]
+     - [ Bosch KGN39KLEC,  Amica FD2325.4XI, 6]
+     - [ Bosch KGN39KLEC,  Amica FD2325.4XI+, 7]
+     - [ Bosch KGN39KLEC,  MPM C-KB, 5]
+     - [ Bosch KGN39KLEC,  Candy CFMS, 9]
+     - [ Bosch KGN39KLEC,  Hotpoint-Ariston E4DG AAA X O3, 8]
+     - [ Bosch KGN39KLEC,  Hotpoint-Ariston E4DG AAA X O3+, 9]
+     - [ Samsung RB29FERNCSS,  Amica FD2325.4XI, 4]
+     - [ Samsung RB29FERNCSS,  Amica FD2325.4XI+, 5]
+     - [ Samsung RB29FERNCSS,  MPM C-KB, 3]
+     - [ Samsung RB29FERNCSS,  Candy CFMS, 9]
+     - [ Samsung RB29FERNCSS,  Hotpoint-Ariston E4DG AAA X O3, 6]
+     - [ Samsung RB29FERNCSS,  Hotpoint-Ariston E4DG AAA X O3+, 7]
+     - [ Amica FD2325.4XI,  Amica FD2325.4XI+, 4]
+     - [ Amica FD2325.4XI,  MPM C-KB, 1/4]
+     - [ Amica FD2325.4XI,  Candy CFMS, 6]
+     - [ Amica FD2325.4XI,  Hotpoint-Ariston E4DG AAA X O3, 4]
+     - [ Amica FD2325.4XI,  Hotpoint-Ariston E4DG AAA X O3+, 5]
+     - [ Amica FD2325.4XI+,  MPM C-KB, 1/6]
+     - [ Amica FD2325.4XI+,  Candy CFMS, 4]
+     - [ Amica FD2325.4XI+,  Hotpoint-Ariston E4DG AAA X O3, 2]
+     - [ Amica FD2325.4XI+,  Hotpoint-Ariston E4DG AAA X O3+, 3]
+     - [ MPM C-KB,  Candy CFMS, 7]
+     - [ MPM C-KB,  Hotpoint-Ariston E4DG AAA X O3, 5]
+     - [ MPM C-KB,  Hotpoint-Ariston E4DG AAA X O3+, 6]
+     - [ Candy CFMS,  Hotpoint-Ariston E4DG AAA X O3, 1/4]
+     - [ Candy CFMS,  Hotpoint-Ariston E4DG AAA X O3+, 1/3]
+     - [ Hotpoint-Ariston E4DG AAA X O3,  Hotpoint-Ariston E4DG AAA X O3+, 2]
+   children: *alternatives
